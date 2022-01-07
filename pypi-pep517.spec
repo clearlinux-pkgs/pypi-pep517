@@ -17,12 +17,12 @@ BuildRequires : buildreq-distutils3
 Provides: pep517
 Provides: pep517-python
 Provides: pep517-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(flit_core)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 API to call PEP 517 hooks
