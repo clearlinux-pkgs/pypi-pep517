@@ -4,7 +4,7 @@
 #
 Name     : pypi-pep517
 Version  : 0.12.0
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/0a/65/6e656d49c679136edfba25f25791f45ffe1ea4ae2ec1c59fe9c35e061cd1/pep517-0.12.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/0a/65/6e656d49c679136edfba25f25791f45ffe1ea4ae2ec1c59fe9c35e061cd1/pep517-0.12.0.tar.gz
 Summary  : Wrappers to build Python packages using PEP 517 hooks
@@ -14,15 +14,12 @@ Requires: pypi-pep517-license = %{version}-%{release}
 Requires: pypi-pep517-python = %{version}-%{release}
 Requires: pypi-pep517-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pep517
-Provides: pep517-python
-Provides: pep517-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(flit_core)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 API to call PEP 517 hooks
@@ -67,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641467667
+export SOURCE_DATE_EPOCH=1649697989
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
