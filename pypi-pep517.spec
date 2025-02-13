@@ -7,7 +7,7 @@
 #
 Name     : pypi-pep517
 Version  : 0.13.1
-Release  : 39
+Release  : 40
 URL      : https://files.pythonhosted.org/packages/44/d7/8f5d2be1a5fed3b0b5ccd3e800153c0f4dd84c2a688d25bce0bb0cb1f87f/pep517-0.13.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/44/d7/8f5d2be1a5fed3b0b5ccd3e800153c0f4dd84c2a688d25bce0bb0cb1f87f/pep517-0.13.1.tar.gz
 Summary  : Wrappers to build Python packages using PEP 517 hooks
